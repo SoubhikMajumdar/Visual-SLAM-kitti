@@ -1,0 +1,19 @@
+dataset:
+  max_frames: 200
+  root: /content/kitti_raw/dataset
+  sequence: '00'
+features:
+  nfeatures: 3000
+  nlevels: 8
+  scaleFactor: 1.2
+matching:
+  min_matches: 25
+  ratio_test: 0.75
+runtime:
+  resize_width: 640
+  visualize: false
+stereo:
+  max_depth: 100.0
+  max_disparity: 128.0
+  min_depth: 1.0
+  min_disparity: 1.0

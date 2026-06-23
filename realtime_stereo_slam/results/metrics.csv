@@ -1,0 +1,2 @@
+sequence,frames,overall_fps,mean_frame_ms,median_frame_ms,p95_frame_ms,tracking_success_rate,ate_rmse_m,alignment_scale
+00,200,49.58092543341758,20.10845803500331,17.612563000000137,18.721740999956182,0.995,0.1922989878807691,1.0078463979582335
