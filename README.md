@@ -7,7 +7,7 @@ A stereo visual odometry (VO) pipeline built from scratch — ORB feature extrac
 ```text
 realtime_stereo_slam/
 └── scripts/
-    └── <notebook>.ipynb        # full pipeline: dataset setup, VO algorithm, evaluation, benchmarking
+    └── Real_Time_Stereo_Visual_SLAM_FPS_Latency_Benchmark.ipynb  # full pipeline: dataset setup, VO algorithm, evaluation, benchmarking
 ```
 
 Only the notebook/script is version-controlled. Everything else described below (datasets, generated results, videos) is either pulled from Google Drive at runtime or regenerated fresh each time the notebook is run in Colab — none of it is checked into this repo, since KITTI image data is large and results are reproducible by re-running the notebook.
@@ -172,5 +172,5 @@ Recovered Umeyama alignment scale was consistently within ~0.99–1.03 of 1.0 ac
 
 1. Register at the [KITTI odometry benchmark page](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) and download `data_odometry_gray.zip` and `data_odometry_poses.zip`.
 2. Upload both zips to a Google Drive folder.
-3. Open `scripts/<notebook>.ipynb` in Colab, set `DRIVE_KITTI_DIR` to that folder's path, and run all cells.
+3. Open `scripts/Real_Time_Stereo_Visual_SLAM_FPS_Latency_Benchmark.ipynb` in Colab, set `DRIVE_KITTI_DIR` to that folder's path, and run all cells.
 4. Adjust `config["dataset"]["sequence"]` and `config["dataset"]["max_frames"]` to target different sequences or run lengths.
